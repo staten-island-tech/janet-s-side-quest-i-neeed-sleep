@@ -10,13 +10,14 @@ def csv_to_list(file_path):
 
     return data_list
 
-
 file_path = "SalesData.csv"  
 data = csv_to_list(file_path)
-print(data)  # Output the list
 
 
+a = 0
 
-
-    
-
+for i in data:
+    for e in range(1,30):
+        if e != type(str):
+            a += int(i[e])
+    print(f"{i[0]}:{a}")
