@@ -21,21 +21,22 @@ courses = {
     }
 }
 
-student_enrollment = ["Python Programming","Business Strategy"]
+student_enrollment = ["Python Programming","Business Strategy", "Marketing 101"]
 
-e = []
 m = 0
 t = 0
+x = "e"
+
 
 for i in courses:
-    if i["seats"] > 0:
-        e.append(i)
-    if i in student_enrollment:
-        m += i["fee"]
+    for s in student_enrollment
+        if s in i and int(i["seats"]) == 0:
+            w = str(i["category"])
+    if w == i["category"]:
+        i == x
+        if s in i and i["seats"] == 0:
+            print(f"{i} is full. Suggesting {x} instead.")
 
-for i in student_enrollment:
-    if i != e:
-        print(f"{i} is full, try enrolling ")
 
 for i in student_enrollment:
     t+=1
