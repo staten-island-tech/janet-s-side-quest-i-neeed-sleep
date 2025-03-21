@@ -8,6 +8,9 @@ courses = {
 
 student_enrollment = ["Python Programming","Cybersecurity", "Marketing 101"]
 
+oo = []
+
 for i in courses:
-    for s in student_enrollment:
-        
+    oo.append(i)
+
+print(oo)

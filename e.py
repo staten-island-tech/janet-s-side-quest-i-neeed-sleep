@@ -15,19 +15,18 @@ d = ""
 w = ""
 ee = False
 
-
-for y in range(2*len(courses)):
+for y in range(2*len(student_enrollment)):
     for i, l in courses.items():
         for s in student_enrollment:
             if s in i and l["seats"] == 0:
                 w = l["category"]
-                d = i
-            if l["category"] == w and l["seats"] > 0 and i != s:
-                x = i
+                d = i 
+        if l["category"] == w and l["seats"] > 0 and i in courses == False:
+            x = i
 
 for i, l in courses.items():
     for s in student_enrollment:
-        if s in i and l["seats"] == 0 and x != "e":
+        if s in i and l["seats"] == 0 :
             print(f"{d} is full. Suggesting {x} instead.")
 
 
