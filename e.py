@@ -10,7 +10,7 @@ student_enrollment = ["Python Programming","Cybersecurity", "Marketing 101"]
 
 m = 0
 mbd = 0
-x = "e"
+x = []
 d = ""
 w = ""
 ee = False
@@ -21,17 +21,17 @@ for y in range(2*len(student_enrollment)):
             if s in i and l["seats"] == 0:
                 w = l["category"]
                 d = i 
-        if l["category"] == w and l["seats"] > 0 and i in courses == False:
-            x = i
+            if l["category"] == w and l["seats"] > 0 and s!=i:
+                x.append(i)
+
+x = str(set(x)-set(student_enrollment))
 
 for i, l in courses.items():
     for s in student_enrollment:
         if s in i and l["seats"] == 0 :
             print(f"{d} is full. Suggesting {x} instead.")
 
-
-
-
+#I give up on trying to make the code simpler
 
 for i, l in courses.items():
     for s in student_enrollment:
