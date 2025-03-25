@@ -16,8 +16,9 @@ data = csv_to_list(file_path)
 
 a = 0
 
-for i in data:
+for i in data[1:]:
     for e in range(1,30):
-        if e != type(str):
-            a += int(i[e])
+        a += int(i[e])
+    a/=30
+    a = round(a, 2)
     print(f"{i[0]}:{a}")
